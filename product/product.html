@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="navbar.css">
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/samsung-sharp-sans" rel="stylesheet"> -->
+    <title>Products</title>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/samsung-sharp-sans');
+    </style>
+    <style>
+        * {
+            font-family: "Arial", Helvetica, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .sec1-container {
+            height: 70vh;
+            width: 45%;
+            /* background-color: rgb(75, 168,168); */
+            margin: 5%;
+            margin-right: 2.5%;
+
+        }
+
+        .mySlides img {
+            height: 450px;
+            width: 500px;
+            padding: 1%;
+            margin-left: 60px;
+        }
+
+        .sec2-container {
+            height: 70vh;
+            width: 45%;
+            /* background-color: aquamarine; */
+            margin: 5%;
+            margin-left: 2.5%;
+        }
+
+        .sec2-container h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .note h4 {
+            margin: 0;
+        }
+
+        .note {
+            /* background-color: antiquewhite; */
+            margin: 4%;
+            height: 20%;
+            position: relative;
+            top: 90px;
+        }
+
+        .note p {
+            font-size: 13px;
+        }
+
+        .rating {
+            /* margin-Left:50px */
+            position: relative;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+            ;
+            /* color:goldenrod; */
+        }
+
+        .price h3 {
+            position: relative;
+            top: 50px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            position: relative;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-btn {
+            padding: 2px 2px;
+            background: #000;
+            /* color:white; */
+            background: white;
+            border-radius: 16px;
+            height: 2.5vw;
+            width: 7vw;
+            border-width: 3px;
+            font-size: 15px;
+            font-weight: bold;
+            align-self: center;
+            /* margin-left: 60px; */
+
+        }
+
+        .login-btn:hover {
+            background: black;
+            color: white;
+        }
+
+        .features img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main-header">
+        <a href="index.html"><span class="logo">something.</span></a>
+        <ul class="top-between">
+            <li class="home1"><a href="index.html">Home</a></li>
+            <li><a href="news.asp">About</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+
+        </ul>
+
+        <div class="top-right">
+            <ul>
+                <li calss="search1"><a href=""><img src="/images/search.png" alt=""></a></li>
+                <li calss="search1"><a href=""><img src="/images/711897.png" alt=""></a></li>
+                <li calss="search1"><a href="login.html"><img src="/images/account.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div> -->
+    <div class="second-header" onmouseleave="hide('Category-hover')">
+        <ul class="list">
+            <li><a href="../homepage/HOMEPAGE.HTML" id="hoverable-a-link">Home</a></li>
+            <li><a href="../cameras/cameras.html" class="Category-a-link" id="hoverable-a-link" onMouseOver="show('Category-hover')">Category</a>
+            </li>
+            <li><a href="../aboutUs/Aboutus.html" id="hoverable-a-link">About Us</a></li>
+            <li><a href="../login/Login.html" id="hoverable-a-link">Sign In</a></li>
+        </ul>
+        <div class="cart-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png">
+    
+        </div>
+    </div>
+    <div class="Category-hover" id="Category-hover" onMouseOver="show('Category-hover')">
+        <ul>
+            <li><a href="../cameras/cameras.html" id="hoverable-a-link">Cameras</a> </li>
+            <li><a href='#' id="hoverable-a-link">Laptops</a> </li>
+            <li><a href='#' id="hoverable-a-link">Audio</a> </li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <div class="sec1-container">
+
+            <div class="mySlides fade">
+
+                <img src="https://cdn.hasselblad.com/f/77891/2000x2000/2fe1e4f546/x1d_ii_45p_main_2000px.jpg">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="https://cdn.hasselblad.com/hasselblad-com/85c54cda296a69fdda284108895609a5110d0f20_x1d-ii-rear-display-white.jpg?auto=format&q=97">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="https://cdn.hasselblad.com/hasselblad-com/fec67206-0c26-4dfe-a764-08a689868b06_Firmware_1.2.0_Video_menues_4000px.jpg?auto=format&q=97&rect=609,0,2778,2667&w=800&h=768">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="images/bose4.jpeg">
+
+            </div>
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+
+
+        <div class="sec2-container">
+            <h2>Bose QuietComfort® 45 headphones</h2>
+            <div class="rating">
+                <i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i
+                    class="fa fa-star fa-2x"></i><i class="fa fa-star-o fa-2x"></i>
+            </div>
+            <div class="price">
+                <h3>&#8377; 250000.00 </h3>
+                <div class="button"><button class="login-btn">
+                        buy now
+                    </button></div>
+            </div>
+            <div class="note">
+
+                <h4>Note</h4>
+                <p>Please note that this product is having a staggered launch across markets and there are chances that
+                    is product is yet to be launched in your geography. Please click on the Buy Now button to know if
+                    the product is available for purchase in your country.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="features">
+        <img src="./features2.jpg" alt="">
+    </div>
+
+<div class="more-desc">
+    <h1>
+        ICONIC QUIET. COMFORT. AND SOUND.
+    </h1>
+    <p>You feel it the minute you put them on. The soft, plush cushions seal you in. Then you flip the switch and whoosh—the world fades away. The music starts, and it’s love at first listen. That’s the power of our next-gen QuietComfort® headphones, now with a best-in-class combination of noise cancelling performance and premium comfort, plus proprietary acoustic technology for deep, clear audio with adjustable EQ, so you can tune your music to your liking. Bose QuietComfort® 45 headphones—wireless headphones with a perfect balance of quiet, comfort and sound you’ll enjoy all day long.</p>
+</div>
+    <div class="footer">
+        <img src="../homepage/logo.png" width="200px" height="65px">
+        <div class="feedback-form"> <a href="../feedback/feedback.html">Feedback Form </a></div>
+    
+        <div class="Contact-info" style="text-align: center;">
+    
+    
+            <div class="Contact-info-details">
+                <i class="fa fa-map-marker" id="icons"></i>
+                <h4>Find Us</h4>
+                <p style="font-size: 10px;">21620 N 19th Ave,
+                    <br /> Phoenix, AZ
+                </p>
+            </div>
+            <div class="Contact-info-details"> <i class="fa fa-phone" id="icons"></i>
+                <h4> Call Us</h4>
+                <p>+828-668-2992 </p>
+            </div>
+            <div class="Contact-info-details"> <i class="fa fa-envelope-o" id="icons"></i>
+                <h4> Write us</h4>
+                <p>Click here</p>
+            </div>
+    
+        </div>
+        <div class="line"></div>
+        <div class="social-buttons">
+            <a href="#" class="fa fa-facebook" id="hoverable-a-link"></a>
+            <a href="#" class="fa fa-twitter" id="hoverable-a-link"></a>
+            <a href="#" class="fa fa-instagram" id="hoverable-a-link"></a>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

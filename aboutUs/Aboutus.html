@@ -1,0 +1,264 @@
+<html>
+
+<head>
+    <title> ElectroHub </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../homepage/logo.png" width="200px" height="65px" class="logo-img">
+
+    </div>
+    <div class="second-header">
+        <ul class="list">
+            <li><a href="../homepage/HOMEPAGE.HTML">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="../login/Login.html">Sign In</a></li>
+        </ul>
+        <div class="cart-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png">
+
+        </div>
+    </div>
+
+    <div class="aboutus">
+        <h1>
+            About US
+        </h1>
+        <h4>
+            Our vision is to increase the freedom of money globally. We believe that by spreading this freedom, we can
+            significantly
+            improve lives around the world
+        </h4>
+        <h4>
+            As our business spans across numerous countries around the globe, we recognise and analyse differences in
+            laws,
+            regulations, and practices in respective countries while conducting business in lawful and ethical manner.
+            We also
+            develop and implement global personal data security policies to respect the privacy of our customers and
+            employees and
+            to protect their personal data.
+        </h4>
+        <h4>
+            We disclose our Global Code of Conduct (‘ElectroHub Business Principles’) to our suppliers, customers, and
+            other external
+            stakeholders as well as to our employees through our ethics management website, and provide a channel to
+            report on any
+            violation of ethical standards. Furthermore, the ‘Employee Business Conduct Guidelines’ that serve as the
+            ethical
+            standards for our employees are translated and available in a total of 15 languages (including Korean) and
+            uploaded on
+            our in-house intranet.
+        </h4>
+    </div>
+    <div class="footer">
+        <img src="../homepage/logo.png" width="200px" height="65px">
+        <div class="feedback-form"> <a href="../feedback/feedback.html">Feedback Form </a></div>
+
+        <div class="Contact-info" style="text-align: center;">
+
+
+            <div class="Contact-info-details">
+                <i class="fa fa-map-marker" id="icons"></i>
+                <h4>Find Us</h4>
+                <p style="font-size: 10px;">21620 N 19th Ave,
+                    <br /> Phoenix, AZ
+                </p>
+            </div>
+            <div class="Contact-info-details"> <i class="fa fa-phone" id="icons"></i>
+                <h4> Call Us</h4>
+                <p>+828-668-2992 </p>
+            </div>
+            <div class="Contact-info-details"> <i class="fa fa-envelope-o" id="icons"></i>
+                <h4> Write us</h4>
+                <p>Click here</p>
+            </div>
+
+        </div>
+        <div class="line"></div>
+        <div class="social-buttons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div>
+    <style>
+        body {
+            width: 100%;
+            background-color: black;
+            font-family: "Arial", Helvetica, sans-serif;
+
+        }
+
+        .header {
+            width: 100%;
+            margin: 0%;
+            padding: 0px;
+            height: fit-content;
+            background-color: black;
+            font-family: "Monaco", monospace;
+            text-align: center;
+
+        }
+
+        .second-header {
+            font-family: "Arial", Helvetica, sans-serif;
+            font-size: x-large;
+            color: white;
+            display: flex;
+        }
+
+
+        ul {
+            margin: 10px auto 0;
+            padding: 0;
+            list-style: none;
+            display: table;
+            width: 600px;
+            text-align: center;
+        }
+
+        li {
+            display: table-cell;
+            position: relative;
+            padding: 15px 0;
+        }
+
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.05%;
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+            width: max-content;
+
+        }
+
+        a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #f8941c;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .cart-img {
+            margin-right: 90px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .cart-img img {
+            height: 40px;
+            width: 40px;
+
+        }
+
+        .aboutus {
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            letter-spacing: 0.2vw;
+
+        }
+
+        .aboutus h1 {
+            color: #f8941c;
+        }
+
+        .aboutus h4 {
+            margin: 4vw;
+            letter-spacing: 0.2vw;
+        }
+
+        .footer {
+            display: flexbox;
+        }
+
+        .Content-info {
+            display: inline-flexbox;
+        }
+
+        .Contact-info-details {
+
+            display: inline-block;
+            width: 10%;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        .Contact-info-details i {
+            float: left;
+        }
+
+        .Contact-info-details h4,
+        .Contact-info-details p {
+            color: #f8941c;
+            position: relative;
+            bottom: 1rem;
+            /* left: 0.8rem; */
+        }
+
+        .social-buttons {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .line {
+            background-color: #f8941c;
+            height: 2px;
+            width: 80%;
+            margin-left: 10rem;
+        }
+
+        .Contact-info-details p {
+            color: #fff;
+            text-align: end;
+        }
+
+        .feedback-form {
+            color: #f8941c;
+            float: right;
+            font-size: xx-large;
+            padding-right: 10rem;
+        }
+
+        .feedback-form a {
+            /* margin-top: 2rem; */
+            text-transform: none;
+            display: inherit;
+            padding: 0;
+        }
+
+        #icons {
+            /* justify-content: center; */
+            font-size: 40;
+            color: #fff;
+            width: auto;
+            text-align: left;
+            height: auto;
+        }
+
+        .footer img {
+            margin-left: 3rem;
+
+        }
+    </style>
+</body>
+
+</html>
